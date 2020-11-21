@@ -1,0 +1,217 @@
+[32m11-21 19:43:09.747 [ INFO] [               c.b.AnnotationApplication: 55] - Starting AnnotationApplication using Java 14.0.1 on BrucedeMacBook-Pro.local with PID 23830 (/Users/bruce/IdeaProjects/JAVA/SKILL/annotation/target/classes started by bruce in /Users/bruce/IdeaProjects/JAVA/SKILL)
+[m[32m11-21 19:43:09.754 [ INFO] [               c.b.AnnotationApplication:664] - The following profiles are active: product
+[m[34m11-21 19:43:10.225 [ WARN] [          o.m.s.m.ClassPathMapperScanner: 44] - No MyBatis mapper was found in '[com.bruce]' package. Please check your configuration.
+[m[32m11-21 19:43:10.514 [ INFO] [             o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+[m[32m11-21 19:43:10.523 [ INFO] [               o.a.c.h.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+[m[32m11-21 19:43:10.523 [ INFO] [                 o.a.c.c.StandardService:173] - Starting service [Tomcat]
+[m[32m11-21 19:43:10.524 [ INFO] [                  o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+[m[32m11-21 19:43:10.573 [ INFO] [                       o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+[m[32m11-21 19:43:10.573 [ INFO] [w.s.c.ServletWebServerApplicationContext:289] - Root WebApplicationContext: initialization completed in 791 ms
+[m[34m11-21 19:43:10.606 [ WARN] [ConfigServletWebServerApplicationContext:596] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.bruce.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[m[32m11-21 19:43:10.608 [ INFO] [                 o.a.c.c.StandardService:173] - Stopping service [Tomcat]
+[m[32m11-21 19:43:10.621 [ INFO] [ConditionEvaluationReportLoggingListener:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[m[31m11-21 19:43:10.635 [ERROR] [  o.s.b.d.LoggingFailureAnalysisReporter: 40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userMapper in com.bruce.service.UserService required a bean of type 'com.bruce.mapper.UserMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.bruce.mapper.UserMapper' in your configuration.
+
+[m[32m11-21 19:43:41.243 [ INFO] [               c.b.AnnotationApplication: 55] - Starting AnnotationApplication using Java 14.0.1 on BrucedeMacBook-Pro.local with PID 23852 (/Users/bruce/IdeaProjects/JAVA/SKILL/annotation/target/classes started by bruce in /Users/bruce/IdeaProjects/JAVA/SKILL)
+[m[32m11-21 19:43:41.249 [ INFO] [               c.b.AnnotationApplication:664] - The following profiles are active: product
+[m[32m11-21 19:43:41.835 [ INFO] [             o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+[m[32m11-21 19:43:41.840 [ INFO] [               o.a.c.h.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+[m[32m11-21 19:43:41.841 [ INFO] [                 o.a.c.c.StandardService:173] - Starting service [Tomcat]
+[m[32m11-21 19:43:41.841 [ INFO] [                  o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+[m[32m11-21 19:43:41.878 [ INFO] [                       o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+[m[32m11-21 19:43:41.879 [ INFO] [w.s.c.ServletWebServerApplicationContext:289] - Root WebApplicationContext: initialization completed in 606 ms
+[m[32m11-21 19:43:42.263 [ INFO] [               o.a.c.h.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+[m[32m11-21 19:43:42.281 [ INFO] [             o.s.b.w.e.t.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+[m[32m11-21 19:43:42.289 [ INFO] [               c.b.AnnotationApplication: 61] - Started AnnotationApplication in 1.212 seconds (JVM running for 6.73)
+[m[32m11-21 19:44:21.559 [ INFO] [                       o.a.c.c.C.[.[.[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[m[32m11-21 19:44:21.560 [ INFO] [               o.s.w.s.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+[m[32m11-21 19:44:21.564 [ INFO] [               o.s.w.s.DispatcherServlet:547] - Completed initialization in 3 ms
+[m[34m11-21 19:44:21.574 [ WARN] [                    o.s.w.s.PageNotFound:1272] - No mapping for GET /Hello.html
+[m[32m11-21 19:46:35.931 [ INFO] [               c.b.AnnotationApplication: 55] - Starting AnnotationApplication using Java 14.0.1 on BrucedeMacBook-Pro.local with PID 24020 (/Users/bruce/IdeaProjects/JAVA/SKILL/annotation/target/classes started by bruce in /Users/bruce/IdeaProjects/JAVA/SKILL)
+[m[32m11-21 19:46:35.938 [ INFO] [               c.b.AnnotationApplication:664] - The following profiles are active: product
+[m[32m11-21 19:46:36.637 [ INFO] [             o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+[m[32m11-21 19:46:36.644 [ INFO] [               o.a.c.h.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+[m[32m11-21 19:46:36.645 [ INFO] [                 o.a.c.c.StandardService:173] - Starting service [Tomcat]
+[m[32m11-21 19:46:36.646 [ INFO] [                  o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+[m[32m11-21 19:46:36.691 [ INFO] [                       o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+[m[32m11-21 19:46:36.691 [ INFO] [w.s.c.ServletWebServerApplicationContext:289] - Root WebApplicationContext: initialization completed in 724 ms
+[m[32m11-21 19:46:37.041 [ INFO] [               o.a.c.h.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+[m[32m11-21 19:46:37.055 [ INFO] [             o.s.b.w.e.t.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+[m[32m11-21 19:46:37.063 [ INFO] [               c.b.AnnotationApplication: 61] - Started AnnotationApplication in 1.316 seconds (JVM running for 6.901)
+[m[32m11-21 19:47:42.869 [ INFO] [               c.b.AnnotationApplication: 55] - Starting AnnotationApplication using Java 14.0.1 on BrucedeMacBook-Pro.local with PID 24070 (/Users/bruce/IdeaProjects/JAVA/SKILL/annotation/target/classes started by bruce in /Users/bruce/IdeaProjects/JAVA/SKILL)
+[m[32m11-21 19:47:42.876 [ INFO] [               c.b.AnnotationApplication:664] - The following profiles are active: product
+[m[32m11-21 19:47:43.538 [ INFO] [             o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+[m[32m11-21 19:47:43.556 [ INFO] [               o.a.c.h.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+[m[32m11-21 19:47:43.557 [ INFO] [                 o.a.c.c.StandardService:173] - Starting service [Tomcat]
+[m[32m11-21 19:47:43.557 [ INFO] [                  o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+[m[32m11-21 19:47:43.600 [ INFO] [                       o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+[m[32m11-21 19:47:43.600 [ INFO] [w.s.c.ServletWebServerApplicationContext:289] - Root WebApplicationContext: initialization completed in 699 ms
+[m[32m11-21 19:47:43.948 [ INFO] [               o.a.c.h.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+[m[32m11-21 19:47:43.963 [ INFO] [             o.s.b.w.e.t.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+[m[32m11-21 19:47:43.970 [ INFO] [               c.b.AnnotationApplication: 61] - Started AnnotationApplication in 1.283 seconds (JVM running for 6.827)
+[m[32m11-21 19:49:05.052 [ INFO] [                       o.a.c.c.C.[.[.[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[m[32m11-21 19:49:05.055 [ INFO] [               o.s.w.s.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+[m[32m11-21 19:49:05.060 [ INFO] [               o.s.w.s.DispatcherServlet:547] - Completed initialization in 5 ms
+[m[34m11-21 19:49:05.073 [ WARN] [                    o.s.w.s.PageNotFound:1272] - No mapping for POST /user
+[m[32m11-21 19:49:18.057 [ INFO] [                  c.z.h.HikariDataSource:110] - HikariPool-1 - Starting...
+[m[32m11-21 19:49:18.451 [ INFO] [                  c.z.h.HikariDataSource:123] - HikariPool-1 - Start completed.
+[m[32m11-21 19:49:18.525 [ INFO] [                       c.b.s.UserService: 37] - login —— user:UserDO(id=0, userId=2010211506, userName=黄林, academy=null, grade=null, discipline=null, cls=null, sex=null, phone=null, type=null, password=null, securityQuestion=null, answer=null, registerDate=null)
+[m[32m11-21 19:49:26.240 [ INFO] [                       c.b.s.UserService: 37] - login —— user:UserDO(id=0, userId=2010211506, userName=黄林, academy=null, grade=null, discipline=null, cls=null, sex=null, phone=null, type=null, password=null, securityQuestion=null, answer=null, registerDate=null)
+[m[32m11-21 19:49:59.360 [ INFO] [                       c.b.s.UserService: 37] - login —— user:UserDO(id=0, userId=2010211506, userName=黄林, academy=null, grade=null, discipline=null, cls=null, sex=null, phone=null, type=null, password=null, securityQuestion=null, answer=null, registerDate=null)
+[m[32m11-21 19:50:18.451 [ INFO] [                       c.b.s.UserService: 37] - login —— user:UserDO(id=0, userId=l131401018, userName=阮玉云, academy=null, grade=null, discipline=null, cls=null, sex=null, phone=null, type=null, password=null, securityQuestion=null, answer=null, registerDate=null)
+[m[32m11-21 19:51:46.030 [ INFO] [                  c.z.h.HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
+[m[32m11-21 19:51:46.042 [ INFO] [                  c.z.h.HikariDataSource:352] - HikariPool-1 - Shutdown completed.
+[m[32m11-21 19:51:53.984 [ INFO] [               c.b.AnnotationApplication: 55] - Starting AnnotationApplication using Java 14.0.1 on BrucedeMacBook-Pro.local with PID 24224 (/Users/bruce/IdeaProjects/JAVA/SKILL/annotation/target/classes started by bruce in /Users/bruce/IdeaProjects/JAVA/SKILL)
+[m[32m11-21 19:51:53.990 [ INFO] [               c.b.AnnotationApplication:664] - The following profiles are active: product
+[m[32m11-21 19:51:54.684 [ INFO] [             o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+[m[32m11-21 19:51:54.690 [ INFO] [               o.a.c.h.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+[m[32m11-21 19:51:54.691 [ INFO] [                 o.a.c.c.StandardService:173] - Starting service [Tomcat]
+[m[32m11-21 19:51:54.691 [ INFO] [                  o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+[m[32m11-21 19:51:54.735 [ INFO] [                       o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+[m[32m11-21 19:51:54.735 [ INFO] [w.s.c.ServletWebServerApplicationContext:289] - Root WebApplicationContext: initialization completed in 716 ms
+[m[32m11-21 19:51:55.076 [ INFO] [               o.a.c.h.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+[m[32m11-21 19:51:55.091 [ INFO] [             o.s.b.w.e.t.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+[m[32m11-21 19:51:55.098 [ INFO] [               c.b.AnnotationApplication: 61] - Started AnnotationApplication in 1.299 seconds (JVM running for 6.867)
+[m[32m11-21 19:51:57.744 [ INFO] [                       o.a.c.c.C.[.[.[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[m[32m11-21 19:51:57.745 [ INFO] [               o.s.w.s.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+[m[32m11-21 19:51:57.746 [ INFO] [               o.s.w.s.DispatcherServlet:547] - Completed initialization in 1 ms
+[m[32m11-21 19:51:57.828 [ INFO] [                  c.z.h.HikariDataSource:110] - HikariPool-1 - Starting...
+[m[32m11-21 19:51:58.123 [ INFO] [                  c.z.h.HikariDataSource:123] - HikariPool-1 - Start completed.
+[m[32m11-21 19:51:58.183 [ INFO] [                       c.b.s.UserService: 37] - login —— user:UserDO(id=0, userId=l131401018, userName=阮玉云, academy=null, grade=null, discipline=null, cls=null, sex=null, phone=null, type=null, password=null, securityQuestion=null, answer=null, registerDate=null)
+[m[32m11-21 19:52:03.575 [ INFO] [                  c.z.h.HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
+[m[32m11-21 19:52:03.580 [ INFO] [                  c.z.h.HikariDataSource:352] - HikariPool-1 - Shutdown completed.
+[m[32m11-21 19:54:47.937 [ INFO] [               c.b.AnnotationApplication: 55] - Starting AnnotationApplication using Java 14.0.1 on BrucedeMacBook-Pro.local with PID 24342 (/Users/bruce/IdeaProjects/JAVA/SKILL/annotation/target/classes started by bruce in /Users/bruce/IdeaProjects/JAVA/SKILL)
+[m[32m11-21 19:54:47.944 [ INFO] [               c.b.AnnotationApplication:664] - The following profiles are active: product
+[m[32m11-21 19:54:48.708 [ INFO] [             o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+[m[32m11-21 19:54:48.714 [ INFO] [               o.a.c.h.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+[m[32m11-21 19:54:48.715 [ INFO] [                 o.a.c.c.StandardService:173] - Starting service [Tomcat]
+[m[32m11-21 19:54:48.715 [ INFO] [                  o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+[m[32m11-21 19:54:48.760 [ INFO] [                       o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+[m[32m11-21 19:54:48.761 [ INFO] [w.s.c.ServletWebServerApplicationContext:289] - Root WebApplicationContext: initialization completed in 786 ms
+[m[32m11-21 19:54:49.118 [ INFO] [               o.a.c.h.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+[m[32m11-21 19:54:49.133 [ INFO] [             o.s.b.w.e.t.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+[m[32m11-21 19:54:49.142 [ INFO] [               c.b.AnnotationApplication: 61] - Started AnnotationApplication in 1.424 seconds (JVM running for 7.009)
+[m[32m11-21 19:54:57.444 [ INFO] [                       o.a.c.c.C.[.[.[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[m[32m11-21 19:54:57.448 [ INFO] [               o.s.w.s.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+[m[32m11-21 19:54:57.449 [ INFO] [               o.s.w.s.DispatcherServlet:547] - Completed initialization in 1 ms
+[m[31m11-21 19:54:57.464 [ERROR] [     o.a.c.c.C.[.[.[.[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+[m java.lang.NullPointerException: null
+	at com.bruce.interceptor.TeacherPermissionInterceptor.preHandle(TeacherPermissionInterceptor.java:37) ~[classes/:?]
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1056) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at com.bruce.filter.EncodingFilter.doFilter(EncodingFilter.java:34) ~[classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+[32m11-21 19:55:04.670 [ INFO] [                  c.z.h.HikariDataSource:110] - HikariPool-1 - Starting...
+[m[32m11-21 19:55:04.948 [ INFO] [                  c.z.h.HikariDataSource:123] - HikariPool-1 - Start completed.
+[m[32m11-21 19:55:05.010 [ INFO] [                       c.b.s.UserService: 37] - login —— user:UserDO(id=0, userId=l131401018, userName=阮玉云, academy=null, grade=null, discipline=null, cls=null, sex=null, phone=null, type=null, password=null, securityQuestion=null, answer=null, registerDate=null)
+[m[32m11-21 19:55:25.330 [ INFO] [                  c.z.h.HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
+[m[32m11-21 19:55:25.340 [ INFO] [                  c.z.h.HikariDataSource:352] - HikariPool-1 - Shutdown completed.
+[m[32m11-21 19:55:33.132 [ INFO] [               c.b.AnnotationApplication: 55] - Starting AnnotationApplication using Java 14.0.1 on BrucedeMacBook-Pro.local with PID 24374 (/Users/bruce/IdeaProjects/JAVA/SKILL/annotation/target/classes started by bruce in /Users/bruce/IdeaProjects/JAVA/SKILL)
+[m[32m11-21 19:55:33.139 [ INFO] [               c.b.AnnotationApplication:664] - The following profiles are active: product
+[m[32m11-21 19:55:33.852 [ INFO] [             o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+[m[32m11-21 19:55:33.860 [ INFO] [               o.a.c.h.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+[m[32m11-21 19:55:33.861 [ INFO] [                 o.a.c.c.StandardService:173] - Starting service [Tomcat]
+[m[32m11-21 19:55:33.862 [ INFO] [                  o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+[m[32m11-21 19:55:33.907 [ INFO] [                       o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+[m[32m11-21 19:55:33.908 [ INFO] [w.s.c.ServletWebServerApplicationContext:289] - Root WebApplicationContext: initialization completed in 739 ms
+[m[32m11-21 19:55:34.250 [ INFO] [               o.a.c.h.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+[m[32m11-21 19:55:34.264 [ INFO] [             o.s.b.w.e.t.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+[m[32m11-21 19:55:34.273 [ INFO] [               c.b.AnnotationApplication: 61] - Started AnnotationApplication in 1.334 seconds (JVM running for 6.875)
+[m[32m11-21 19:55:40.298 [ INFO] [                       o.a.c.c.C.[.[.[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[m[32m11-21 19:55:40.299 [ INFO] [               o.s.w.s.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+[m[32m11-21 19:55:40.300 [ INFO] [               o.s.w.s.DispatcherServlet:547] - Completed initialization in 1 ms
+[m[32m11-21 19:55:40.392 [ INFO] [                  c.z.h.HikariDataSource:110] - HikariPool-1 - Starting...
+[m[32m11-21 19:55:40.695 [ INFO] [                  c.z.h.HikariDataSource:123] - HikariPool-1 - Start completed.
+[m[32m11-21 19:55:40.756 [ INFO] [                       c.b.s.UserService: 37] - login —— user:UserDO(id=0, userId=l131401018, userName=阮玉云, academy=null, grade=null, discipline=null, cls=null, sex=null, phone=null, type=null, password=null, securityQuestion=null, answer=null, registerDate=null)
+[m[31m11-21 19:55:43.460 [ERROR] [     o.a.c.c.C.[.[.[.[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+[m java.lang.NullPointerException: null
+	at com.bruce.interceptor.TeacherPermissionInterceptor.preHandle(TeacherPermissionInterceptor.java:36) ~[classes/:?]
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1056) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at com.bruce.filter.EncodingFilter.doFilter(EncodingFilter.java:34) ~[classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+[32m11-21 19:55:48.925 [ INFO] [                  c.z.h.HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
+[m[32m11-21 19:55:48.931 [ INFO] [                  c.z.h.HikariDataSource:352] - HikariPool-1 - Shutdown completed.
+[m
