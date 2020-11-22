@@ -214,4 +214,62 @@ Consider defining a bean of type 'com.bruce.mapper.UserMapper' in your configura
 	at java.lang.Thread.run(Thread.java:832) [?:?]
 [32m11-21 19:55:48.925 [ INFO] [                  c.z.h.HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
 [m[32m11-21 19:55:48.931 [ INFO] [                  c.z.h.HikariDataSource:352] - HikariPool-1 - Shutdown completed.
+[m[32m11-21 21:03:57.300 [ INFO] [               c.b.AnnotationApplication: 55] - Starting AnnotationApplication using Java 14.0.1 on BrucedeMacBook-Pro.local with PID 27888 (/Users/bruce/IdeaProjects/JAVA/SKILL/annotation/target/classes started by bruce in /Users/bruce/IdeaProjects/JAVA/SKILL)
+[m[32m11-21 21:03:57.307 [ INFO] [               c.b.AnnotationApplication:664] - The following profiles are active: product
+[m[32m11-21 21:03:58.196 [ INFO] [             o.s.b.w.e.t.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+[m[32m11-21 21:03:58.204 [ INFO] [               o.a.c.h.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+[m[32m11-21 21:03:58.205 [ INFO] [                 o.a.c.c.StandardService:173] - Starting service [Tomcat]
+[m[32m11-21 21:03:58.206 [ INFO] [                  o.a.c.c.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+[m[32m11-21 21:03:58.256 [ INFO] [                       o.a.c.c.C.[.[.[/]:173] - Initializing Spring embedded WebApplicationContext
+[m[32m11-21 21:03:58.257 [ INFO] [w.s.c.ServletWebServerApplicationContext:289] - Root WebApplicationContext: initialization completed in 907 ms
+[m[32m11-21 21:03:58.643 [ INFO] [               o.a.c.h.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+[m[32m11-21 21:03:58.658 [ INFO] [             o.s.b.w.e.t.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+[m[32m11-21 21:03:58.667 [ INFO] [               c.b.AnnotationApplication: 61] - Started AnnotationApplication in 1.61 seconds (JVM running for 7.279)
+[m[32m11-21 21:04:39.189 [ INFO] [                       o.a.c.c.C.[.[.[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[m[32m11-21 21:04:39.190 [ INFO] [               o.s.w.s.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+[m[32m11-21 21:04:39.191 [ INFO] [               o.s.w.s.DispatcherServlet:547] - Completed initialization in 1 ms
+[m[32m11-21 21:04:39.284 [ INFO] [                  c.z.h.HikariDataSource:110] - HikariPool-1 - Starting...
+[m[32m11-21 21:04:39.670 [ INFO] [                  c.z.h.HikariDataSource:123] - HikariPool-1 - Start completed.
+[m[32m11-21 21:04:39.738 [ INFO] [                       c.b.s.UserService: 37] - login —— user:UserDO(id=0, userId=l131401018, userName=阮玉云, academy=null, grade=null, discipline=null, cls=null, sex=null, phone=null, type=null, password=null, securityQuestion=null, answer=null, registerDate=null)
+[m[31m11-21 21:04:45.110 [ERROR] [     o.a.c.c.C.[.[.[.[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+[m java.lang.NullPointerException: null
+	at com.bruce.interceptor.TeacherPermissionInterceptor.preHandle(TeacherPermissionInterceptor.java:36) ~[classes/:?]
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1056) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at com.bruce.filter.EncodingFilter.doFilter(EncodingFilter.java:34) ~[classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+[32m11-21 21:06:11.167 [ INFO] [                  c.z.h.HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
+[m[32m11-21 21:06:11.174 [ INFO] [                  c.z.h.HikariDataSource:352] - HikariPool-1 - Shutdown completed.
 [m
